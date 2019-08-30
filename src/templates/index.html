@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookKeepers</title>
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="page__wrapper">
+        <header class="header">
+            <div class="uk-container">
+                <div class="header-info">
+                    <div class="header-logo">
+                        <a href="/"><img src="../img/header-logo.png" alt="header-logo"></a>
+                    </div>
+                    <div class="header-info__contacts header-contacts">
+                        <div class="header-contacts__time">
+                            <object data="../img/header-clock.svg" type="image/svg+xml"></object>
+                            <span>Пн-Пт: c 9:00 до 18:00</span>
+                        </div>
+                        <div class="header-contacts__phone">
+                            <a href="tel:+79385354667">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="25px" height="25px">
+                                    <path fill-rule="evenodd"
+                                        d="M12.499,25.000 C5.597,25.000 -0.000,19.402 -0.000,12.499 C-0.000,5.597 5.597,-0.000 12.499,-0.000 C19.403,-0.000 25.000,5.596 25.000,12.499 C25.000,19.403 19.403,25.000 12.499,25.000 ZM17.363,6.277 C17.363,5.321 16.588,4.548 15.633,4.548 L9.366,4.548 C8.411,4.548 7.637,5.322 7.637,6.277 L7.637,18.668 C7.637,19.623 8.411,20.397 9.366,20.397 L15.633,20.397 C16.588,20.397 17.363,19.623 17.363,18.668 L17.363,6.277 ZM15.224,17.042 L9.776,17.042 C9.470,17.042 9.222,16.805 9.222,16.514 L9.222,6.215 C9.222,5.924 9.470,5.687 9.776,5.687 L15.224,5.687 C15.530,5.687 15.778,5.924 15.778,6.215 L15.778,16.514 C15.778,16.805 15.530,17.042 15.224,17.042 ZM12.500,17.864 C13.039,17.864 13.476,18.301 13.476,18.840 C13.476,19.380 13.039,19.817 12.500,19.817 C11.961,19.817 11.523,19.380 11.523,18.840 C11.523,18.301 11.961,17.864 12.500,17.864 Z" />
+                                </svg>
+                                <span>+7 938 535 46 67</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-default header-contacts__btn get-callback__btn--form"
+                        uk-toggle="target: #callback-modal" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <nav>
+                <div class="uk-container header-nav__container">
+                    <div class="header-nav">
+                        <button class="header-nav__toggle">
+                            <div class="lines__box">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </button>
+                        <ul class="header-nav__list">
+                            <div class="uk-inline">
+                                <li class="header-nav__item dropdown">
+                                    <a href="#">Аутсорсинг <object data="../img/header-nav__chevron.svg"
+                                            type="image/svg+xml"></object></a>
+                                </li>
+                                <ul class="custom-dropdown" uk-dropdown="offset: 1">
+                                    <li><a href="#">Бухгалтерский и налоговый учет</a></li>
+                                    <li><a href="#">Кадровый учет и делопроизводство</a></li>
+                                    <li><a href="#">Составление и сдача бухгалтерской отчетности</a></li>
+                                    <li><a href="#">Прохождение проверок налоговой, ПФР, ФСС, трудовая инспекция</a>
+                                    </li>
+                                    <li><a href="#">Налоговая оптимизация</a></li>
+                                    <li><a href="#">Бухгалтерское и налоговое консультирование</a></li>
+                                </ul>
+                            </div>
+                            <li class="header-nav__item dropdown"><a href="#">Аудит <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a></li>
+                            <li class="header-nav__item dropdown"><a href="#">Антикризисное управление <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a></li>
+                            <li class="header-nav__item"><a href="#">О компании</a></li>
+                            <li class="header-nav__item"><a href="#">Контакты</a></li>
+                            <div class="search-btn__container">
+                                <button class="empty-btn search-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="17px" height="17px">
+                                        <path
+                                            d="M16.620,14.772 L13.117,11.268 C13.961,10.048 14.383,8.690 14.383,7.191 C14.383,6.217 14.194,5.286 13.817,4.396 C13.438,3.508 12.928,2.741 12.284,2.098 C11.641,1.454 10.875,0.943 9.986,0.565 C9.098,0.187 8.167,-0.002 7.193,-0.002 C6.219,-0.002 5.287,0.187 4.399,0.565 C3.511,0.943 2.744,1.454 2.101,2.098 C1.457,2.741 0.946,3.508 0.568,4.396 C0.191,5.286 0.002,6.217 0.002,7.191 C0.002,8.165 0.191,9.096 0.568,9.985 C0.946,10.874 1.457,11.640 2.101,12.284 C2.744,12.928 3.511,13.439 4.399,13.817 C5.287,14.195 6.219,14.384 7.193,14.384 C8.690,14.384 10.049,13.962 11.268,13.117 L14.772,16.611 C15.016,16.870 15.323,17.000 15.690,17.000 C16.045,17.000 16.351,16.870 16.610,16.611 C16.869,16.352 16.998,16.045 16.998,15.692 C16.998,15.331 16.872,15.024 16.620,14.772 L16.620,14.772 ZM10.425,10.425 C9.530,11.321 8.452,11.769 7.193,11.769 C5.933,11.769 4.855,11.320 3.960,10.425 C3.064,9.529 2.617,8.452 2.617,7.191 C2.617,5.931 3.064,4.853 3.960,3.958 C4.855,3.062 5.933,2.614 7.193,2.614 C8.452,2.614 9.530,3.062 10.425,3.958 C11.321,4.853 11.769,5.931 11.769,7.191 C11.769,8.452 11.321,9.529 10.425,10.425 L10.425,10.425 Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <form action="#" class="header-search">
+                <div class="uk-container header-search__container">
+                    <input type="search" name="search" autocomplete="off" class="search-input"
+                        placeholder="Что будем искать?">
+                    <button class="btn btn-default header-search__btn" type="submit">Найти</button>
+                </div>
+            </form>
+        </header>
+        <main class="home">
+            <section class="banner">
+                <div class="uk-container banner-container">
+                    <div class="banner-content">
+                        <div class="banner-title">
+                            <h1>Сократим ваши расходы <br> и сдадим отчётность вовремя</h1>
+                        </div>
+                        <div class="banner-cardbox">
+                            <div class="banner-cardbox__card cardbox-card">
+                                <div class="cardbox-card__img">
+                                    <img src="../img/shield.png" alt="shield" />
+                                </div>
+                                <div class="cardbox-card__body">
+                                    <div class="cardbox-card__title">Всё под контролем</div>
+                                    <div class="cardbox-card__content">
+                                        <span>организуем достоверный учет в соответствии с российским
+                                            законодательством</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-cardbox__card cardbox-card">
+                                <div class="cardbox-card__img">
+                                    <img src="../img/star.png" alt="star" />
+                                </div>
+                                <div class="cardbox-card__body">
+                                    <div class="cardbox-card__title">Гибкая тарифная сетка</div>
+                                    <div class="cardbox-card__content">
+                                        <span>с расчётом формы собственности, налогообложения и нюансов бизнеса</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner-cardbox__card cardbox-card">
+                                <div class="cardbox-card__img">
+                                    <img src="../img/folder.png" alt="folder" />
+                                </div>
+                                <div class="cardbox-card__body">
+                                    <div class="cardbox-card__title">Не боимся сложностей</div>
+                                    <div class="cardbox-card__content">
+                                        <span>при необходимости восстановим бухгалтерский и налоговый учет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="uk-container">
+                    <div class="section-title services-title">
+                        <h2>Мы оказываем услуги во всех направлениях <br> бухгалтерского учета</h2>
+                        <div class="section-title__underline">
+                            <object data="../img/section-underline.svg" type="image/svg+xml"></object>
+                        </div>
+                    </div>
+                    <div class="services-content">
+                        <div class="services-part">
+                            <div class="services-part__type">Аутсорсинг</div>
+                            <ul class="services-part__content">
+                                <li><a href="#">Бухгалтерский и налоговый учет</a></li>
+                                <li><a href="#">Кадровый учет и делопроизводство</a></li>
+                                <li><a href="#">Составление и сдача бухгалтерской отчетности</a></li>
+                                <li><a href="#">Прохождение проверок налоговой, ПФР, ФСС, трудовая инспекция</a></li>
+                                <li><a href="#">Налоговая оптимизация</a></li>
+                                <li><a href="#">Бухгалтерское и налоговое консультирование</a></li>
+                            </ul>
+                        </div>
+                        <div class="services-part">
+                            <div class="services-part__type">Аудит</div>
+                            <ul class="services-part__content">
+                                <li><a href="#">Обязательный аудит</a></li>
+                                <li><a href="#">Инициативный аудит</a></li>
+                                <li><a href="#">Экспресс-аудит по налогам</a></li>
+                                <li><a href="#">Аудиторское сопровождение главного бухгалтера</a></li>
+                                <li><a href="#">Дистанционный аудит предприятия</a></li>
+                            </ul>
+                        </div>
+                        <div class="services-part">
+                            <div class="services-part__type">Антикризисное управление</div>
+                            <ul class="services-part__content">
+                                <li><a href="#">Срочная сдача отчетности при увольнении главного бухгалтера</a></li>
+                                <li><a href="#">Восстановление бухгалтерского учета</a></li>
+                                <li><a href="#">Разблокировка счетов в банках</a></li>
+                                <li><a href="#">Бухгалтерская поддержка при банкротстве</a></li>
+                                <li><a href="#">Оптимизация численности бухгалтерии</a></li>
+                                <li><a href="#">Постановка бухгалтерских учетных процессов заново</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="uk-container">
+                    <div class="section-title about-title">
+                        <h2>О нас</h2>
+                        <div class="section-title__underline">
+                            <object data="../img/section-underline.svg" type="image/svg+xml"></object>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-content__aside">
+                            <ul class="about-content__list">
+                                <li>У нас более 300 сотрудников – экспертов по бухгалтерскому учету, методологов 1С,
+                                    налоговых консультантов и т. д. </li>
+                                <li>Вместе с тем оказание бухуслуг – не единственная специализация. Мы предлагаем
+                                    российским и иностранным клиентам широкий спектр бизнес-услуг.</li>
+                                <li>Ведение бухгалтерского учета осуществляется автоматизировано в системе 1С. Для вас
+                                    мы подбираем подходящую вашей специфике версию программы.</li>
+                                <li>Здесь вы можете ознакомится с Нашим договором на бухгалтерское обслуживание. Также
+                                    оплата может осуществляться на основании выставленного счета.</li>
+                                <li>Для осуществления бухгалтерского сопровождения деятельности вашей организации
+                                    необходим следующий <a href="#">Перечень документов</a></li>
+                            </ul>
+                            <div class="btn-box__inline">
+                                <a href="#" class="btn btn-brown__outline about-btn">Больше о компании</a>
+                                <a href="#" class="btn btn-brown__outline about-btn">Контактная информация</a>
+                            </div>
+                        </div>
+                        <div class="about-content__img">
+                            <div class="about-content__img--title">Мы сертифицированные эксперты в бухучете</div>
+                            <img src="../img/profsert.png" alt="profsert">
+                            <a class="btn btn-default about-content__img--btn">Все сертификаты</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work">
+                <div class="uk-container">
+                    <div class="section-title work-title">
+                        <h2>Работа с нами</h2>
+                        <div class="section-title__underline">
+                            <object data="../img/section-underline.svg" type="image/svg+xml"></object>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-cardbox">
+                            <div class="work-cardbox__card">
+                                <div class="cardbox-card__img work-cardbox__img">
+                                    <object data="../img/work-check.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="cardbox-card__title work-cardbox__title">Выслушаем ваши вопросы <br> по
+                                    ведению бухучёту</div>
+                                <div class="cardbox-card__content work-cardbox__content">
+                                    <span>В ходе телефонных переговоров или очной встречи определяем степень
+                                        проблемы</span>
+                                </div>
+                            </div>
+                            <div class="work-cardbox__card">
+                                <div class="cardbox-card__img work-cardbox__img">
+                                    <object data="../img/work-check.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="cardbox-card__title work-cardbox__title">Дадим оценку текущему <br>состоянию
+                                    дел</div>
+                                <div class="cardbox-card__content work-cardbox__content">
+                                    <span>Проверим текущий состав бухгалтерской и налоговой отчётности</span>
+                                </div>
+                            </div>
+                            <div class="work-cardbox__card">
+                                <div class="cardbox-card__img work-cardbox__img">
+                                    <object data="../img/work-check.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="cardbox-card__title work-cardbox__title">Выберем оптимальную <br> систему
+                                    налогообложения</div>
+                                <div class="cardbox-card__content work-cardbox__content">
+                                    <span>Построим модель ведение вашего бизнеса с учётом выбранного
+                                        налогообложения</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="consult">
+                <div class="uk-container">
+                    <div class="section-title consult-title">
+                        <h2>Получите <br> бесплатную консультацию!</h2>
+                    </div>
+                    <div class="consult-content">
+                        <form class="consult-form" action="#">
+                            <input type="text" placeholder="Имя" required>
+                            <input type="text" placeholder="Телефон" required>
+                            <button class="btn btn-brown consult-form__btn get-callback__btn"
+                                type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="uk-container">
+                <ul class="footer-nav">
+                    <li><a href="#">Аутсорсинг</a></li>
+                    <li><a href="#">Аудит</a></li>
+                    <li><a href="#">Антикризисное управление</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li class="footer-nav__phone"><a href="tel:+79385354667">+7 938 535 46 67</a></li>
+                </ul>
+                <div class="footer__bottom">
+                    <div class="footer-privacy">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                    <small>&copy; ООО Перспектива Плюс, Самара, улица, дом</small>
+                    <div class="footer-logo">
+                        <div class="footer-logo__img">
+                            <object data="../img/footer-avs.svg" type="image/svg+xml"></object>
+                        </div>
+                        <span>Сделано в <br>avsweb.ru</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="callback-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <form action="#" class="internal-form__consult">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="internal-form__title">Получите бесплатную консультацию</div>
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Телефон">
+                <button class="btn btn-brown internal-form__btn">Отправить</button>
+            </form>
+            <!-- <div class="callback-modal__thanks">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <object data="../img/thanks-people.svg" type="image/svg+xml"></object>
+                <div class="section-title__underline">
+                    <object data="../img/section-underline.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="modal-thanks__content">
+                    Ваше сообщение отправлено. <br>
+                    Спасибо, что обратились к нам. <br>
+                    Мы свяжемся с вами в течение часа <br>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="../bundle.js"></script>
+</body>
+
+</html>

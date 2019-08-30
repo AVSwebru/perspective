@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookKeepers</title>
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="page__wrapper">
+        <header class="header">
+            <div class="uk-container">
+                <div class="header-info">
+                    <div class="header-logo">
+                        <a href="/"><img src="../img/header-logo.png" alt="header-logo"></a>
+                    </div>
+                    <div class="header-info__contacts header-contacts">
+                        <div class="header-contacts__time">
+                            <object data="../img/header-clock.svg" type="image/svg+xml"></object>
+                            <span>Пн-Пт: c 9:00 до 18:00</span>
+                        </div>
+                        <div class="header-contacts__phone">
+                            <a href="tel:+79385354667">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="25px" height="25px">
+                                    <path fill-rule="evenodd"
+                                        d="M12.499,25.000 C5.597,25.000 -0.000,19.402 -0.000,12.499 C-0.000,5.597 5.597,-0.000 12.499,-0.000 C19.403,-0.000 25.000,5.596 25.000,12.499 C25.000,19.403 19.403,25.000 12.499,25.000 ZM17.363,6.277 C17.363,5.321 16.588,4.548 15.633,4.548 L9.366,4.548 C8.411,4.548 7.637,5.322 7.637,6.277 L7.637,18.668 C7.637,19.623 8.411,20.397 9.366,20.397 L15.633,20.397 C16.588,20.397 17.363,19.623 17.363,18.668 L17.363,6.277 ZM15.224,17.042 L9.776,17.042 C9.470,17.042 9.222,16.805 9.222,16.514 L9.222,6.215 C9.222,5.924 9.470,5.687 9.776,5.687 L15.224,5.687 C15.530,5.687 15.778,5.924 15.778,6.215 L15.778,16.514 C15.778,16.805 15.530,17.042 15.224,17.042 ZM12.500,17.864 C13.039,17.864 13.476,18.301 13.476,18.840 C13.476,19.380 13.039,19.817 12.500,19.817 C11.961,19.817 11.523,19.380 11.523,18.840 C11.523,18.301 11.961,17.864 12.500,17.864 Z" />
+                                </svg>
+                                <span>+7 938 535 46 67</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-default header-contacts__btn get-callback__btn--form"
+                        uk-toggle="target: #callback-modal" type="button">Заказать звонок</button>
+                </div>
+            </div>
+            <nav>
+                <div class="uk-container header-nav__container">
+                    <div class="header-nav">
+                        <button class="header-nav__toggle">
+                            <div class="lines__box">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </button>
+                        <ul class="header-nav__list">
+                            <div class="uk-inline">
+                                <li class="header-nav__item dropdown">
+                                    <a href="#">Аутсорсинг <object data="../img/header-nav__chevron.svg"
+                                            type="image/svg+xml"></object></a>
+                                </li>
+                                <ul class="custom-dropdown" uk-dropdown="offset: 1">
+                                    <li><a href="#">Бухгалтерский и налоговый учет</a></li>
+                                    <li><a href="#">Кадровый учет и делопроизводство</a></li>
+                                    <li><a href="#">Составление и сдача бухгалтерской отчетности</a></li>
+                                    <li><a href="#">Прохождение проверок налоговой, ПФР, ФСС, трудовая инспекция</a>
+                                    </li>
+                                    <li><a href="#">Налоговая оптимизация</a></li>
+                                    <li><a href="#">Бухгалтерское и налоговое консультирование</a></li>
+                                </ul>
+                            </div>
+                            <li class="header-nav__item dropdown"><a href="#">Аудит <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a></li>
+                            <li class="header-nav__item dropdown"><a href="#">Антикризисное управление <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a></li>
+                            <li class="header-nav__item"><a href="#">О компании</a></li>
+                            <li class="header-nav__item"><a href="#">Контакты</a></li>
+                            <div class="search-btn__container">
+                                <button class="empty-btn search-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="17px" height="17px">
+                                        <path
+                                            d="M16.620,14.772 L13.117,11.268 C13.961,10.048 14.383,8.690 14.383,7.191 C14.383,6.217 14.194,5.286 13.817,4.396 C13.438,3.508 12.928,2.741 12.284,2.098 C11.641,1.454 10.875,0.943 9.986,0.565 C9.098,0.187 8.167,-0.002 7.193,-0.002 C6.219,-0.002 5.287,0.187 4.399,0.565 C3.511,0.943 2.744,1.454 2.101,2.098 C1.457,2.741 0.946,3.508 0.568,4.396 C0.191,5.286 0.002,6.217 0.002,7.191 C0.002,8.165 0.191,9.096 0.568,9.985 C0.946,10.874 1.457,11.640 2.101,12.284 C2.744,12.928 3.511,13.439 4.399,13.817 C5.287,14.195 6.219,14.384 7.193,14.384 C8.690,14.384 10.049,13.962 11.268,13.117 L14.772,16.611 C15.016,16.870 15.323,17.000 15.690,17.000 C16.045,17.000 16.351,16.870 16.610,16.611 C16.869,16.352 16.998,16.045 16.998,15.692 C16.998,15.331 16.872,15.024 16.620,14.772 L16.620,14.772 ZM10.425,10.425 C9.530,11.321 8.452,11.769 7.193,11.769 C5.933,11.769 4.855,11.320 3.960,10.425 C3.064,9.529 2.617,8.452 2.617,7.191 C2.617,5.931 3.064,4.853 3.960,3.958 C4.855,3.062 5.933,2.614 7.193,2.614 C8.452,2.614 9.530,3.062 10.425,3.958 C11.321,4.853 11.769,5.931 11.769,7.191 C11.769,8.452 11.321,9.529 10.425,10.425 L10.425,10.425 Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <form action="#" class="header-search">
+                <div class="uk-container header-search__container">
+                    <input type="search" name="search" autocomplete="off" class="search-input"
+                        placeholder="Что будем искать?">
+                    <button class="btn btn-default header-search__btn" type="submit">Найти</button>
+                </div>
+            </form>
+        </header>
+        <main class="home">
+            <section class="breadcrumbs">
+                <div class="uk-container breadcrumbs-container">
+                    <a href="#" class="breadcrumbs-page">Главная</a> →
+                    <a href="#" class="breadcrumbs-page">Аутсорсинг</a> →
+                    <span class="breadcrumbs-current">Бухгалтерский и налоговый учет</span>
+                </div>
+            </section>
+            <section class="internal">
+                <div class="uk-container internal-container">
+                    <section class="internal-form__aside">
+                        <form action="#" class="internal-form__consult">
+                            <div class="internal-form__title">Получите бесплатную консультацию</div>
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="phone" placeholder="Телефон">
+                            <button class="btn btn-brown internal-form__btn">Отправить</button>
+                        </form>
+                    </section>
+                    <section class="internal-aside">
+                        <ul class="custom-accordion internal-accordion" uk-accordion>
+                            <li>
+                                <a class="uk-accordion-title internal-accordion__title" href="#">Аутсорсинг <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a>
+                                <div class="internal-accordion__content uk-accordion-content">
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерский и налоговый учет</a>
+                                    </div>
+                                    <div class="internal-accordion__item"><a href="#">Кадровый учет и
+                                            делопроизводство</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Составление и сдача бухгалтерской
+                                            отчетности</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Прохождение проверок налоговой,
+                                            ПФР, ФСС, трудовая инспекция</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Налоговая оптимизация</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерское и налоговое
+                                            консультирование</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title internal-accordion__title" href="#">Аудит <object
+                                        data="../img/header-nav__chevron.svg" type="image/svg+xml"></object></a>
+                                <div class="internal-accordion__content uk-accordion-content">
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерский и налоговый учет</a>
+                                    </div>
+                                    <div class="internal-accordion__item"><a href="#">Кадровый учет и
+                                            делопроизводство</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Составление и сдача бухгалтерской
+                                            отчетности</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Прохождение проверок налоговой,
+                                            ПФР, ФСС, трудовая инспекция</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Налоговая оптимизация</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерское и налоговое
+                                            консультирование</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title internal-accordion__title" href="#">Антикризисное
+                                    управление <object data="../img/header-nav__chevron.svg"
+                                        type="image/svg+xml"></object></a>
+                                <div class="internal-accordion__content uk-accordion-content">
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерский и налоговый учет</a>
+                                    </div>
+                                    <div class="internal-accordion__item"><a href="#">Кадровый учет и
+                                            делопроизводство</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Составление и сдача бухгалтерской
+                                            отчетности</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Прохождение проверок налоговой,
+                                            ПФР, ФСС, трудовая инспекция</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Налоговая оптимизация</a></div>
+                                    <div class="internal-accordion__item"><a href="#">Бухгалтерское и налоговое
+                                            консультирование</a></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </section>
+                    <div class="internal-content">
+                        <div class="internal-title">
+                            <h1>Бухгалтерский и налоговый учет</h1>
+                        </div>
+                        <div class="internal-banner">
+                            <div class="internal-banner__img">
+                                <img src="../img/internal-page__banner.png" alt="internal-page__banner">
+                            </div>
+                            <div class="internal-banner__body">
+                                <ul>
+                                    <li>
+                                        Согласно закону от 06.12.2011 № 402-ФЗ ведение бухгалтерского учета (ИП, ООО,
+                                        ОАО) является обязанностью организации. У компаний есть возможность вести учёт
+                                        самостоятельно или заказать аутсорсинг.
+                                    </li>
+                                    <li>
+                                        Практика показывает, что стороннее обслуживание – более оптимальный вариант.
+                                        Снижается стоимость ведения бухучёта, т.к. нет необходимости содержать
+                                        собственный бухгалтерский отдел.
+                                    </li>
+                                    <li>
+                                        Услуги по ведению бухгалтерского учета Более 20 лет ведём бухгалтерский учёт
+                                        предприятий и организаций различных форм собственности. Некоторые компании
+                                        сотрудничают с нами в течение всего срока нашей работы. Чем мы очень гордимся!
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="internal-tasks internal-content__part">
+                            <div class="internal-title--smaller">
+                                <h2>В наши задачи входит:</h2>
+                            </div>
+                            <div class="internal-tasks__content">
+                                <p>оформление осуществляемых предприятием хозяйственных операций; внесение сведений о
+                                    проведённых операциях в 1С; расчёт заработной платы, налоговых отчислений и
+                                    страховых взносов; составление промежуточной и ежегодной бухгалтерской отчетности;
+                                    взаимодействие с представителями контролирующих органов. Мы обязательно даём
+                                    гарантии на результат нашей работы! Сделать это позволяет квалификация наших
+                                    специалистов и большой опыт работы. Чтобы грамотно вести бухгалтерский и налоговый
+                                    учет организации, не достаточно знать финансовое и налоговое законодательство. Важно
+                                    понимать и взаимодействовать с контролирующими органами государственных ведомств и
+                                    судебных инстанций.
+                                </p>
+                                <p>
+                                    Наши бухгалтера внимательно отслеживают все поправки в законодательство, изучают
+                                    информационные материалы от ФНС и результаты судебных дел в финансовой сфере. Это
+                                    помогает нам более эффективно вести бухучет, а вашим документам – соответствовать
+                                    требованиям проверяющих и контролирующих органов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="internal-dependencies">
+                            <div class="internal-title--smaller">
+                                <h2>На стоимость ведения бухучета зависит от:</h2>
+                            </div>
+                            <ul class="internal-dependencies__list">
+                                <li>объёма бухгалтерских операций за отчетный период;</li>
+                                <li>числа оформленных сотрудников, получающих зарплату;</li>
+                                <li>видов форм собственности и используемой схемы налогообложения;</li>
+                                <li>выбранного варианта сотрудничества.</li>
+                            </ul>
+                        </div>
+                        <div class="internal-cost">
+                            <div class="internal-title--smaller">
+                                <h2>На стоимость ведения бухучета зависит от:</h2>
+                            </div>
+                            <ol class="internal-cost__list">
+                                <li>обслуживать бухгалтерию предприятий;</li>
+                                <li>проводить отдельные операции бухучета;</li>
+                                <li>составлять и сдавать финансовую отчетность;</li>
+                                <li>проводить консультации.</li>
+                            </ol>
+                            <p>Предлагаем линейку стандартных тарифов на обслуживание — от 1 500 ₽ в месяц для ООО и ИП
+                                без персонала. Соответственно, чем крупнее ваша организация - тем выше тариф. Самый
+                                эффективный вариант понять, на сколько вам необходим аутсорсинг – получить бесплатную
+                                консультацию нашего специалиста.
+                            </p>
+                        </div>
+                        <div class="internal-table">
+                            <div class="internal-title--smaller">
+                                <h2>Таблица</h2>
+                            </div>
+                            <div class="internal-table__body">
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Бухгалтерский и налоговый учет</div>
+                                    <div class="internal-table__cost">4500 <span class="rubl">c</span></div>
+                                </div>
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Кадровый учет и делопроизводство</div>
+                                    <div class="internal-table__cost">3200 <span class="rubl">c</span></div>
+                                </div>
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Составление и сдача бухгалтерской отчетности
+                                    </div>
+                                    <div class="internal-table__cost">4500 <span class="rubl">c</span></div>
+                                </div>
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Прохождение проверок налоговой, ПФР, ФСС,
+                                        трудовая инспекция</div>
+                                    <div class="internal-table__cost">1500 <span class="rubl">c</span></div>
+                                </div>
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Налоговая оптимизация</div>
+                                    <div class="internal-table__cost">7800 <span class="rubl">c</span></div>
+                                </div>
+                                <div class="internal-table__row">
+                                    <div class="internal-table__content">Бухгалтерское и налоговое консультирование
+                                    </div>
+                                    <div class="internal-table__cost">3200 <span class="rubl">c</span></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-default internal-consult__btn">
+                                Получить консультацию
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="uk-container">
+                <ul class="footer-nav">
+                    <div class="uk-inline">
+                        <li>
+                            Аутсорсинг
+                            <object data="../img/gray-chevron.svg" type="image/svg+xml"></object>
+                        </li>
+                        <ul class="custom-dropdown" uk-dropdown="pos: right-center">
+                            <li><a href="#">Бухгалтерский и налоговый учет</a></li>
+                            <li><a href="#">Кадровый учет и делопроизводство</a></li>
+                            <li><a href="#">Составление и сдача бухгалтерской отчетности</a></li>
+                            <li><a href="#">Прохождение проверок налоговой, ПФР, ФСС, трудовая инспекция</a></li>
+                            <li><a href="#">Налоговая оптимизация</a></li>
+                            <li><a href="#">Бухгалтерское и налоговое консультирование</a></li>
+                        </ul>
+                    </div>
+                    <li>Аудит
+                        <object data="../img/gray-chevron.svg" type="image/svg+xml"></object>
+                    </li>
+                    <li>Антикризисное управление
+                        <object data="../img/gray-chevron.svg" type="image/svg+xml"></object>
+                    </li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li class="footer-nav__phone"><a href="tel:+79385354667">+7 938 535 46 67</a></li>
+                </ul>
+                <div class="footer__bottom">
+                    <div class="footer-privacy">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-logo">
+                        <div class="footer-logo__img">
+                            <object data="../img/footer-avs.svg" type="image/svg+xml"></object>
+                        </div>
+                        <span>Сделано в <br>avsweb.ru</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="callback-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <form action="#" class="internal-form__consult">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="internal-form__title">Получите бесплатную консультацию</div>
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Телефон">
+                <button class="btn btn-brown internal-form__btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="../bundle.js"></script>
+</body>
+
+</html>
